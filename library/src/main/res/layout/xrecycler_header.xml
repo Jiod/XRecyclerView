@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xrecyclerview_header_content"
+    android:background="#f3f3f3"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:id="@+id/xrecyclerview_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#333333"
+            android:id="@+id/xrecyclerview_header_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xrecyclerview_header_hint_normal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xrecyclerview_header_last_time"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:text="11:58:20"
+                android:id="@+id/xrecyclerview_header_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/xrecyclerview_header_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/xrecyclerview_header_text"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-35dp"
+        android:src="@drawable/icon_arrow"/>
+
+    <ProgressBar
+        android:id="@+id/xrecyclerview_header_progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/xrecyclerview_header_text"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-40dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
